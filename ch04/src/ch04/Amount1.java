@@ -12,6 +12,7 @@ public class Amount1{
 
 		System.out.println(subject);
 		System.out.println("=======");
+		
 		for(int i = 0; i<title.length; i++) {
 			System.out.print(title[i]+"\t");
 		}
@@ -22,23 +23,31 @@ public class Amount1{
 		}
 		System.out.println();
 		
+//		<--core
+		
 		for(int i =0; i< amt.length; i++) {
 			System.out.print(name[i] + "\t");
 			for(int j = 0; j<amt[i].length;j++) {
 				System.out.print(amt[i][j]+"\t");
-				sum +=amt[i][j]; tot[j] += amt[i][j];
+				sum +=amt[i][j]; 
+				tot[j] += amt[i][j];
 			}
-			System.out.println(sum+"\t"+sum/amt[i].length); sum=0;
+			System.out.println(sum+"\t"+sum/amt[i].length);
+			sum=0;
 		}
+		
 		for(int i = 0; i<len; i++) {
 			System.out.print("=");
 		}
 		System.out.print("\n총합계\t");
+		
 		for(int j = 0; j < tot.length; j++) {
 			System.out.print(tot[j]+"\t");
 			sum += tot[j];
 		}
 		System.out.println(sum+"\t"+sum/tot.length /name.length); sum=0;
+		
+//		core--/>
 	}
 
 }

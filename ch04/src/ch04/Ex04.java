@@ -4,7 +4,7 @@ public class Ex04 {
 
 	public static void main(String[] args) {
 		//  Scanner를 이용하여 4자리 정수를 받고 year
-		// 윤년 400나누어서 떨어지면, 4로 나누어서 떨어지고 100으로 나누어서 안떨어지면 평년
+		//  400나누어서 떨어지면 윤년, 4로 나누어서 떨어지고 100으로 나누어서 안떨어지면 평년
 
 		Scanner in = new Scanner(System.in);
 

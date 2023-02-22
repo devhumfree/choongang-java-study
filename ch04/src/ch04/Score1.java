@@ -19,16 +19,18 @@ public class Score1 {
 		System.out.println();
 		for(int i = 0; i< len; i++){System.out.print("=");}
 		System.out.println();
+		
 		for(int i = 0; i < score.length; i++) {
 			System.out.print(name[i]+"\t");
 			for(int j = 0; j < score[i].length; j++) {
 				System.out.print(score[i][j]+"\t");
-				sum += score[i][j]; tot[j] += score[i][j];
+				sum += score[i][j];
+				tot[j] += score[i][j];
 			}
 			System.out.println(sum+"\t"+sum/score[i].length);
 			sum = 0;
 		}
-		System.out.println("\t합계\t");
+		System.out.print("합계\t");
 		for(int j = 0; j<tot.length; j++){
 			System.out.print(tot[j]+"\t"); sum += tot[j];
 		}

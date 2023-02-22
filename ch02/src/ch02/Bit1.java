@@ -6,7 +6,7 @@ public class Bit1 {
 		int num1 = 10, num2 = 6;
 		System.out.println("num1 & num2 = " + (num1 & num2));
 		System.out.println("num1 | num2 = " + (num1 | num2));
-		System.out.println("num1 ^ num2 = " + (num1 ^ num2));
+		System.out.println("num1 ^ num2 = " + (num1 ^ num2)); 
 		System.out.println("num1 ~ num2 = " + (~num1));
 
 	}
